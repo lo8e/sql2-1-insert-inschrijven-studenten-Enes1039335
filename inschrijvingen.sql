@@ -25,6 +25,7 @@ INSERT INTO klassen_studenten (klas_code, ov_nummer)
         ('lo8e-amo4', 666669);
 */
 
+/*
 UPDATE studenten
 SET geboortedatum = '1996-03-16 00:00:00'
 WHERE ov_nummer = 666666;
@@ -40,5 +41,10 @@ WHERE ov_nummer = 666668;
 UPDATE studenten
 SET geboortedatum = '1998-03-16 00:00:00'
 WHERE ov_nummer = 666669;
+*/
+
+UPDATE studenten
+SET actief = 0
+WHERE inschrijvings_datum < '2017-01-01';
 
 
