@@ -16,9 +16,29 @@ INSERT INTO studenten (ov_nummer, achternaam, voornaam)
         (666669, 'Gates', 'Bill');
 */
 
+/*
 INSERT INTO klassen_studenten (klas_code, ov_nummer)
 	VALUES
 		('lo8e-amo1', 666666),
         ('lo8e-amo2', 666667),
         ('lo8e-amo3', 666668),
         ('lo8e-amo4', 666669);
+*/
+
+UPDATE studenten
+SET geboortedatum = '1996-03-16 00:00:00'
+WHERE ov_nummer = 666666;
+
+UPDATE studenten
+SET geboortedatum = '1991-10-06 00:00:00'
+WHERE ov_nummer = 666667;
+
+UPDATE studenten
+SET geboortedatum = '1996-08-26 00:00:00'
+WHERE ov_nummer = 666668;
+
+UPDATE studenten
+SET geboortedatum = '1998-03-16 00:00:00'
+WHERE ov_nummer = 666669;
+
+
